@@ -64,7 +64,7 @@ export function MarketingLayout({ children }: { children: ReactNode }) {
                     Sign in
                   </Link>
                   <Link
-                    href="/auth/signup"
+                    href="https://app.varai.io/auth/signup"
                     className="relative group overflow-hidden rounded-lg"
                   >
                     <div className="absolute -inset-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 opacity-70 blur-sm group-hover:opacity-100 transition-opacity" />
@@ -88,4 +88,5 @@ export function MarketingLayout({ children }: { children: ReactNode }) {
 }
 
 export default MarketingLayout
+
 
