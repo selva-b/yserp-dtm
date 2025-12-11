@@ -5,7 +5,7 @@ import { Toaster } from 'sonner'
 import { initializeCsrfToken } from '@/lib/api-client'
 import { AuthProvider } from '@/contexts/AuthContext'
 import { QueryProvider } from '@/providers/QueryProvider'
-import ToastContainer from '@/components/ui/ToastContainer'
+// import ToastContainer from '@/components/ui/ToastContainer'
 import { useToastStore } from '@/hooks/use-toast'
 
 /**
@@ -40,3 +40,4 @@ export default function ClientProviders({
     </QueryProvider>
   )
 }
+
