@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
-import { Header } from './Header'
+// import { Header } from './Header'
 import { useAuth } from '@/contexts/AuthContext'
 // import GlobalUploadModals from '@/components/common/GlobalUploadModals'
 
@@ -745,12 +745,12 @@ export default function AppLayout({ children }: AppLayoutProps) {
         sidebarCollapsed ? 'lg:pl-16' : 'lg:pl-64'
       }`}>
         {/* Header - Top horizontal bar with search and profile */}
-        <Header
+        {/* <Header
           user={user}
           onMenuClick={() => setSidebarOpen(true)}
           onToggleSidebar={handleManualToggle}
           sidebarCollapsed={sidebarCollapsed}
-        />
+        /> */}
 
         {/* Page content */}
         <main className="flex-1 bg-gray-50">{children}</main>
@@ -761,3 +761,4 @@ export default function AppLayout({ children }: AppLayoutProps) {
     </div>
   )
 }
+
