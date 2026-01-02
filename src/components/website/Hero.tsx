@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import LaserFlow from '@/components/ui/LaserFlow'
 
 type Cta = { href: string; label: string }
 
@@ -25,8 +26,11 @@ export function Hero({
   illustrationAlt = '',
 }: HeroProps) {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+    <section className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24 overflow-hidden">
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <LaserFlow />
+      </div>
+      <div className="relative z-10 grid gap-10 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-7 space-y-6">
           {eyebrow ? (
             <p className="text-sm font-semibold uppercase tracking-wide text-primary-600">{eyebrow}</p>

@@ -148,7 +148,7 @@ export default function HoverFooter() {
         { label: "Careers", href: "#" },
         {
           label: "Contact sales",
-          href: "mailto:sales@yserp-dtm.com",
+          href: "mailto:sales@varai.com",
           pulse: true,
         },
       ],
@@ -158,8 +158,8 @@ export default function HoverFooter() {
   const contactInfo = [
     {
       icon: "📧",
-      text: "support@yserp-dtm.com",
-      href: "mailto:support@yserp-dtm.com",
+      text: "support@varai.com",
+      href: "mailto:support@varai.com",
     },
     {
       icon: "📞",
@@ -180,16 +180,16 @@ export default function HoverFooter() {
 
   return (
    
-        <div className="bg-black rounded-3xl shadow-2xl relative z-10">
-          <footer className="bg-[#0F0F11]/10 relative h-fit rounded-3xl overflow-hidden">
+        <div className="bg-black shadow-2xl relative z-10">
+          <footer className="bg-[#0F0F11]/10 relative h-fit  overflow-hidden">
             <div className="max-w-7xl mx-auto p-14 z-40 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 lg:gap-16 pb-12">
           <div className="flex flex-col space-y-4">
             <div className="flex items-center space-x-2">
               <span className="text-[#3ca2fa] text-3xl font-extrabold">&hearts;</span>
-              <span className="text-white text-3xl font-bold">YSERP-DTM</span>
+              <span className="text-white text-3xl font-bold">VARAI</span>
             </div>
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm leading-relaxed text-slate-400">
               Drawing and technical management for engineering orgs. Unified bids, drawings, tickets, tasks, and time with audit-grade controls.
             </p>
           </div>
@@ -200,7 +200,7 @@ export default function HoverFooter() {
               <ul className="space-y-3">
                 {section.links.map((link) => (
                   <li key={link.label} className="relative">
-                    <a href={link.href} className="hover:text-[#3ca2fa] transition-colors">
+                    <a href={link.href} className="text-slate-400 hover:text-[#3ca2fa] transition-colors">
                       {link.label}
                     </a>
                     {link.pulse && (
@@ -219,11 +219,11 @@ export default function HoverFooter() {
                 <li key={i} className="flex items-center space-x-3">
                   <span className="text-[#3ca2fa]">{item.icon}</span>
                   {item.href ? (
-                    <a href={item.href} className="hover:text-[#3ca2fa] transition-colors">
+                    <a href={item.href} className="text-slate-400 hover:text-[#3ca2fa] transition-colors">
                       {item.text}
                     </a>
                   ) : (
-                    <span className="hover:text-[#3ca2fa] transition-colors">{item.text}</span>
+                    <span className="text-slate-400 hover:text-[#3ca2fa] transition-colors">{item.text}</span>
                   )}
                 </li>
               ))}
@@ -234,14 +234,14 @@ export default function HoverFooter() {
         <hr className="border-t border-gray-700 my-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center text-sm space-y-4 md:space-y-0">
-          <div className="flex space-x-6 text-gray-400">
+          <div className="flex space-x-6 text-slate-400">
             {socialLinks.map(({ label, href }) => (
               <a key={label} href={href} aria-label={label} className="hover:text-[#3ca2fa] transition-colors">
                 {label}
               </a>
             ))}
           </div>
-          <p className="text-center md:text-left">&copy; {new Date().getFullYear()} YSERP-DTM. All rights reserved.</p>
+          <p className="text-center md:text-left text-slate-400">&copy; {new Date().getFullYear()} VARAI. All rights reserved.</p>
         </div>
       </div>
 

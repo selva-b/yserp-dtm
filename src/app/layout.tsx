@@ -7,7 +7,7 @@ import AppLayout from '@/components/layout/AppLayout'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'YSERP-DTM - Drawing and Technical Management',
+  title: 'VARAI - Drawing and Technical Management',
   description: 'Enterprise resource planning system for engineering and technical organizations',
 }
 

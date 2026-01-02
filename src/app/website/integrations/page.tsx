@@ -1,5 +1,6 @@
 "use client";
 
+import MarketingLayout from "@/components/marketing/MarketingLayout";
 import { motion } from "framer-motion";
 import { Mail, Database, Layers, BarChart3, Code2, Plug } from "lucide-react";
 
@@ -33,6 +34,7 @@ const integrations = [
 
 export default function WebsiteIntegrationsPage() {
   return (
+    <MarketingLayout>
     <div className="min-h-screen bg-black relative overflow-hidden">
       {/* Animated background grid - same as pricing */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff2c_1px,transparent_1px),linear-gradient(to_bottom,#3a3a3a01_1px,transparent_1px)] bg-[size:70px_80px] [mask-image:radial-gradient(50%_50%,white,transparent)] opacity-40" />
@@ -185,6 +187,7 @@ export default function WebsiteIntegrationsPage() {
         </section>
       </div>
     </div>
+    </MarketingLayout>
   )
 }
 

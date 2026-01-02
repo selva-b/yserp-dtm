@@ -1,10 +1,11 @@
+import MarketingLayout from '@/components/marketing/MarketingLayout'
 import PricingSection from '@/components/website/PricingSection'
 
 export default function WebsitePricingPage() {
   return (
-    <div className="bg-black">
+    <MarketingLayout>
       <PricingSection />
-    </div>
+      </MarketingLayout>
   )
 }
 

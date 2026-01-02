@@ -79,8 +79,10 @@ export function MarketingLayout({ children }: { children: ReactNode }) {
         </div>
       </header>
 
-      {/* Content with top padding to account for fixed navbar */}
-      <main className="pt-24">{children}</main>
+      {/* Content area - uses padding-top for spacing, z-index lower than navbar */}
+      <div className="relative z-0">
+        {children}
+      </div>
 
       <HoverFooter />
     </div>
