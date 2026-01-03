@@ -33,7 +33,7 @@ export function MarketingLayout({ children }: { children: ReactNode }) {
                   <div className="relative">
                     <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg blur opacity-30 group-hover:opacity-60 transition-opacity" />
                     <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 text-white font-bold shadow-lg">
-                      V
+                     <img src="/website/illustrations/logo.jpeg" className='rounded-lg'></img>
                     </div>
                   </div>
                   <span className="text-lg font-bold bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent">

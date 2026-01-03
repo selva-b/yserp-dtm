@@ -50,7 +50,8 @@ export function HeroSection() {
                                 muted
                                 playsInline
                                 className="size-full object-cover opacity-100"
-                                src="https://ik.imagekit.io/lrigu76hy/tailark/dna-video.mp4?updatedAt=1745736251477"></video>
+                                // src="https://ik.imagekit.io/lrigu76hy/tailark/dna-video.mp4?updatedAt=1745736251477"></video>
+                                src="/website/illustrations/video/hero/v12.mp4"></video>
                             <div className="absolute inset-0 bg-black/40"></div>
                         </div>
                     </div>
@@ -154,7 +155,7 @@ const HeroHeader = () => {
                                 aria-label="home"
                                 className="flex items-center space-x-3">
                                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 text-white font-bold shadow-lg">
-                                    Y
+                                    <img src="/website/illustrations/logo.jpeg" className='rounded-lg'></img>
                                 </div>
                                 <span className="text-xl font-bold" style={{ color: '#ffffff' }}>VARAI</span>
                             </Link>
