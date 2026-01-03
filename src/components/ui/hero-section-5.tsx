@@ -50,7 +50,7 @@ export function HeroSection() {
                                 muted
                                 playsInline
                                 className="size-full object-cover opacity-100"
-                                src="/website/illustrations/video/hero/v12.mp4"></video>
+                                src="/website/v12.mp4"></video>
                             <div className="absolute inset-0 bg-black/40"></div>
                         </div>
                     </div>
