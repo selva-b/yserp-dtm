@@ -154,7 +154,7 @@ const HeroHeader = () => {
                                 aria-label="home"
                                 className="flex items-center space-x-3">
                                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 text-white font-bold shadow-lg">
-                                    Y
+                                    <img src="/website/illustrations/logo.jpeg" className='rounded-lg'></img>
                                 </div>
                                 <span className="text-xl font-bold" style={{ color: '#ffffff' }}>VARAI</span>
                             </Link>
