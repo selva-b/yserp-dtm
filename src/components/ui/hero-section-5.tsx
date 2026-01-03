@@ -14,13 +14,13 @@ export function HeroSection() {
             <HeroHeader />
             <main className="overflow-x-hidden">
                 <section className="relative">
-                    <div className="px-24 md:pb-32 lg:pb-36 lg:pt-[14rem] relative">
-                        <div className="relative z-10 mx-auto flex max-w-7xl flex-col px-6 lg:block lg:px-12">
+                    <div className="px-4 sm:px-6 md:px-12 lg:px-24 pb-16 sm:pb-24 md:pb-32 lg:pb-36 pt-20 sm:pt-24 md:pt-32 lg:pt-[14rem] relative">
+                        <div className="relative z-10 mx-auto flex max-w-7xl flex-col px-2 sm:px-4 md:px-6 lg:block lg:px-12">
                             <div className="mx-auto max-w-lg text-center lg:ml-0 lg:max-w-full lg:text-left">
-                                <h1 className="mt-8 max-w-2xl text-balance text-5xl md:text-6xl lg:mt-16 xl:text-7xl" style={{ color: '#ffffff', textShadow: '0 4px 12px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.6)' }}>Engineering Workflows Made Simple</h1>
-                                <p className="mt-8 max-w-2xl text-balance text-lg" style={{ color: '#ffffff', textShadow: '0 2px 8px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.6)' }}>Complete drawing and technical management platform. From bidding to delivery, manage projects, drawings, tickets, tasks, and timesheets with audit-grade security.</p>
+                                <h1 className="mt-4 sm:mt-6 md:mt-8 max-w-2xl text-balance text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:mt-16 xl:text-7xl" style={{ color: '#ffffff', textShadow: '0 4px 12px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.6)' }}>Engineering Workflows Made Simple</h1>
+                                <p className="mt-4 sm:mt-6 md:mt-8 max-w-2xl text-balance text-base sm:text-lg" style={{ color: '#ffffff', textShadow: '0 2px 8px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.6)' }}>Complete drawing and technical management platform. From bidding to delivery, manage projects, drawings, tickets, tasks, and timesheets with audit-grade security.</p>
 
-                                <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
+                                <div className="mt-6 sm:mt-8 md:mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
                                     <Button
                                         asChild
                                         size="lg"
@@ -43,14 +43,14 @@ export function HeroSection() {
                                 </div>
                             </div>
                         </div>
-                        <div className="aspect-[2/3] absolute inset-1 overflow-hidden rounded-3xl border border-black/10 sm:aspect-video lg:rounded-[3rem] dark:border-white/5 -z-10">
+                        <div className="aspect-[9/16] sm:aspect-[3/4] md:aspect-video absolute inset-1 overflow-hidden rounded-2xl sm:rounded-3xl border border-black/10 lg:rounded-[3rem] dark:border-white/5 -z-10">
                             <video
                                 autoPlay
                                 loop
                                 muted
                                 playsInline
                                 className="size-full object-cover opacity-100"
-                                src="/website/v12.mp4"></video>
+                                src="https://ik.imagekit.io/ssmmp/mainVDCOM%20-%20Made%20with%20Clipchamp.mp4"></video>
                             <div className="absolute inset-0 bg-black/40"></div>
                         </div>
                     </div>
