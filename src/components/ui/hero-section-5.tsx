@@ -49,9 +49,14 @@ export function HeroSection() {
                                 loop
                                 muted
                                 playsInline
+                                preload="metadata"
+                                disablePictureInPicture
+                                disableRemotePlayback
                                 className="size-full object-cover opacity-100"
+                                style={{ willChange: 'auto' }}
                                 // src="https://ik.imagekit.io/lrigu76hy/tailark/dna-video.mp4?updatedAt=1745736251477"></video>
-                                src="/website/illustrations/video/hero/v12.mp4"></video>
+                                src="/website/illustrations/video/hero/v12.mp4"
+                            ></video>
                             <div className="absolute inset-0 bg-black/40"></div>
                         </div>
                     </div>

@@ -351,6 +351,10 @@ function HeroOrbitDeck() {
                 loop
                 muted
                 playsInline
+                preload="metadata"
+                disablePictureInPicture
+                disableRemotePlayback
+                style={{ willChange: 'auto' }}
               />
               <span className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50 mix-blend-soft-light transition-opacity duration-700 group-hover:opacity-70" />
               <div className="pointer-events-none absolute inset-0 border border-white/20 mix-blend-overlay transition-all duration-700 group-hover:border-white/40" />

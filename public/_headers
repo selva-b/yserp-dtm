@@ -1,0 +1,33 @@
+# Netlify Headers File
+# Alternative to netlify.toml headers configuration
+# https://docs.netlify.com/routing/headers/
+
+# Video files - aggressive caching and streaming support
+/website/illustrations/video/*
+  Cache-Control: public, max-age=31536000, immutable
+  Accept-Ranges: bytes
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+
+# All video formats
+/*.mp4
+  Cache-Control: public, max-age=31536000, immutable
+  Accept-Ranges: bytes
+  X-Content-Type-Options: nosniff
+
+/*.webm
+  Cache-Control: public, max-age=31536000, immutable
+  Accept-Ranges: bytes
+  X-Content-Type-Options: nosniff
+
+# Static images
+/website/illustrations/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# Next.js static files
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/_next/image/*
+  Cache-Control: public, max-age=31536000, immutable

@@ -17,6 +17,37 @@ const nextConfig = {
       },
     ],
   },
+  // Video optimization headers
+  async headers() {
+    return [
+      {
+        source: '/website/illustrations/video/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+          {
+            key: 'Accept-Ranges',
+            value: 'bytes',
+          },
+        ],
+      },
+      {
+        source: '/:path*.mp4',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+          {
+            key: 'Accept-Ranges',
+            value: 'bytes',
+          },
+        ],
+      },
+    ];
+  },
   webpack: (config, { isServer }) => {
     // Fixes for client-side only packages
     if (!isServer) {
