@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { InfiniteSlider } from '@/components/ui/infinite-slider'
@@ -7,52 +7,6 @@ import { ProgressiveBlur } from '@/components/ui/progressive-blur'
 import { cn } from '@/lib/utils'
 import { Menu, X, ChevronRight } from 'lucide-react'
 import { useScroll, motion } from 'motion/react'
-
-// Lazy Video Component for optimized loading
-function LazyHeroVideo() {
-    const videoRef = useRef<HTMLVideoElement>(null);
-    const [shouldLoad, setShouldLoad] = useState(false);
-
-    useEffect(() => {
-        // Load video immediately since it's above the fold
-        const timer = setTimeout(() => {
-            setShouldLoad(true);
-        }, 100); // Small delay to let critical content render first
-
-        return () => clearTimeout(timer);
-    }, []);
-
-    useEffect(() => {
-        if (shouldLoad && videoRef.current) {
-            videoRef.current.play().catch(() => {
-                // Autoplay blocked, video will play when user interacts
-            });
-        }
-    }, [shouldLoad]);
-
-    return (
-        <>
-            {/* Background gradient fallback while video loads */}
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
-
-            {shouldLoad && (
-                <video
-                    ref={videoRef}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    disablePictureInPicture
-                    disableRemotePlayback
-                    className="size-full object-cover opacity-100 transition-opacity duration-700"
-                    style={{ willChange: 'auto' }}
-                    src="/website/illustrations/video/hero/v12.mp4"
-                ></video>
-            )}
-            <div className="absolute inset-0 bg-black/40"></div>
-        </>
-    );
-}
 
 export function HeroSection() {
     return (
@@ -90,7 +44,14 @@ export function HeroSection() {
                             </div>
                         </div>
                         <div className="aspect-[2/3] absolute inset-1 overflow-hidden rounded-3xl border border-black/10 sm:aspect-video lg:rounded-[3rem] dark:border-white/5 -z-10">
-                            <LazyHeroVideo />
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="size-full object-cover opacity-100"
+                                src="/website/illustrations/video/hero/v12.mp4"></video>
+                            <div className="absolute inset-0 bg-black/40"></div>
                         </div>
                     </div>
                 </section>
@@ -193,7 +154,7 @@ const HeroHeader = () => {
                                 aria-label="home"
                                 className="flex items-center space-x-3">
                                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 text-white font-bold shadow-lg">
-                                    <img src="/website/illustrations/logo.jpeg" className='rounded-lg'></img>
+                                    Y
                                 </div>
                                 <span className="text-xl font-bold" style={{ color: '#ffffff' }}>VARAI</span>
                             </Link>
