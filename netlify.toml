@@ -5,7 +5,7 @@
   publish = ".next"
   command = "npm run build"
 
-# Optimize video delivery with aggressive caching and compression
+# Optimize video delivery with aggressive caching
 [[headers]]
   for = "/website/illustrations/video/*"
   [headers.values]
@@ -13,13 +13,11 @@
     Cache-Control = "public, max-age=31536000, immutable"
     # Enable video streaming
     Accept-Ranges = "bytes"
-    # Compress video metadata (not the video itself)
-    Content-Encoding = "br, gzip"
     # Security headers
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "SAMEORIGIN"
-    # Performance hints
-    X-Cache-Status = "HIT"
+    # Correct content type
+    Content-Type = "video/mp4"
 
 # Optimize all static video files
 [[headers]]
