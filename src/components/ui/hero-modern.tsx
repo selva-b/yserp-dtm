@@ -351,7 +351,7 @@ function HeroOrbitDeck() {
                 loop
                 muted
                 playsInline
-                preload="metadata"
+                preload="auto"
                 disablePictureInPicture
                 disableRemotePlayback
                 style={{ willChange: 'auto' }}

@@ -80,11 +80,12 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
-# Enable HTTP/2 Server Push for critical resources (optional)
+# Priority hints for critical resources
 [[headers]]
   for = "/"
   [headers.values]
-    Link = "</website/illustrations/video/hero/v12.mp4>; rel=preload; as=video; type=video/mp4"
+    # Don't preload video - let it load asynchronously
+    Link = "</website/illustrations/video/hero/v12.mp4>; rel=prefetch; as=video"
 
 # Redirect rules (if needed)
 [[redirects]]
